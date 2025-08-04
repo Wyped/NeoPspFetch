@@ -54,6 +54,8 @@ If you want to build NeoPspFetch from source:
    psp-cmake..
    make
    ```
+5. **(Optional) Sign with PSCrypter 2.0**
+- Use [PSCrypter 2.0](https://www.brewology.com/downloads/download.php?id=12450&mcid=1) to sign the EBOOT.PBP. (Required to run on official firmware).
 
 ## Credits
 
