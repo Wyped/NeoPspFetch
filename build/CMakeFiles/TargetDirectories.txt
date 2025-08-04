@@ -1,3 +1,0 @@
-/home/wype/Dev/NeoPspFetch/build/CMakeFiles/NeoPspFetch.dir
-/home/wype/Dev/NeoPspFetch/build/CMakeFiles/edit_cache.dir
-/home/wype/Dev/NeoPspFetch/build/CMakeFiles/rebuild_cache.dir
