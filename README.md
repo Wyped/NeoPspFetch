@@ -12,12 +12,15 @@ NeoPspFetch is a PSP homebrew inspired by NeoFetch on Linux.
 
 - **NeoFetch like UI:** Display informations along a cool ascii art, in the way of NeoFetch on Linux.
 - **System Info:** Show firmware version, factory firmware version, motherboard model and more.
-- **Battery Info:** Show battery status, capacity, temperature, and more. (Tested with official batteries only.)
+- **Battery Info:** Show battery status, capacity, temperature, and more. 
 - **Signed Homebrew:** NeoPspFetch run on official and custom firmwares.
 
 ## Disclaimer
 
 Untested on PSP 3000 and PSP E1000 series (I do not own those) but should run without issues.
+
+Tested with official Sony and Ostent batteries. Compatibility with third-party brands may varie. 
+
 
 ## Installation
 
