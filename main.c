@@ -15,7 +15,7 @@
 #include "kernel.h"
 
 
-PSP_MODULE_INFO("NeoPspFetch", 0, 1, 0);
+PSP_MODULE_INFO("NeoPspFetch", 0, 1, 1);
 PSP_MAIN_THREAD_ATTR(PSP_THREAD_ATTR_USER | PSP_THREAD_ATTR_VFPU);
 PSP_HEAP_SIZE_KB(4*1024);
 
@@ -778,7 +778,7 @@ void fill_info_battery_colored(int x, int y) {
 }
 
 void fill_info_credits_colored(int x, int y) {
-    color(YELLOW);  pspDebugScreenSetXY(x, y+0); printf("NeoPspFetch v1.0");
+    color(YELLOW);  pspDebugScreenSetXY(x, y+0); printf("NeoPspFetch v1.1");
         
     color(WHITE); pspDebugScreenSetXY(x, y+2); printf("Programmed by ");
     color(GREEN); pspDebugScreenSetXY(x, y+3); printf("Wyped");
@@ -789,9 +789,9 @@ void fill_info_credits_colored(int x, int y) {
     color(BLUE); pspDebugScreenSetXY(x, y+9); printf("Yoti and friends");
 
     color(WHITE); pspDebugScreenSetXY(x, y+11); printf("libPspExploit by");
-    color(RED); pspDebugScreenSetXY(x, y+12); printf("JoseAaronLopezGarcia,");
-    color(RED); pspDebugScreenSetXY(x, y+13); printf("mcidclan, krazynez,");
-    color(RED); pspDebugScreenSetXY(x, y+14); printf("wally4000");
+    color(RED); pspDebugScreenSetXY(x, y+12); printf("qwikrazor87, CelesteBlue,");
+    color(RED); pspDebugScreenSetXY(x, y+13); printf("Acid_Snake, Davee, mcidclan,");
+    color(RED); pspDebugScreenSetXY(x, y+14); printf("wally4000 and more...");
 
     color(WHITE); pspDebugScreenSetXY(x, y+16); printf("PSPDEV SDK by ");
     color(ORANGE); pspDebugScreenSetXY(x, y+17); printf("PSPDEV Team");
