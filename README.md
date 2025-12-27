@@ -19,7 +19,9 @@ NeoPspFetch is a PSP homebrew inspired by NeoFetch on Linux.
 
 Untested on PSP E1000 series (I do not own one) but should run without issues.
 
-Tested with official Sony and Ostent batteries. Compatibility with third-party brands may varie. 
+Tested with official Sony and Ostent batteries. Compatibility with third-party brands may varie.
+
+Not compatible with PS Vita / Adrenaline.
 
 
 ## Installation
