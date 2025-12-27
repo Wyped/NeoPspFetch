@@ -21,7 +21,7 @@ Untested on PSP E1000 series (I do not own one) but should run without issues.
 
 Tested with official Sony and Ostent batteries. Compatibility with third-party brands may varie.
 
-Not compatible with PS Vita / Adrenaline.
+Not compatible with PS Vita / Adrenaline and emulators.
 
 
 ## Installation
