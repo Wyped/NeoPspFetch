@@ -56,8 +56,10 @@ If you want to build NeoPspFetch from source:
    psp-cmake..
    make
    ```
-5. **(Optional) Sign with PSCrypter 2.0**
-- Use [PSCrypter 2.0](https://www.brewology.com/downloads/download.php?id=12450&mcid=1) to sign the EBOOT.PBP. (Required to run on official firmware).
+5. **(Optional) Sign Eboot**
+   ```bash
+   psp-cmake -DBUILD_PRX=1 -DENC_PRX=1 .. && make
+   ```
 
 ## Credits
 
@@ -68,6 +70,8 @@ If you want to build NeoPspFetch from source:
 - [PSPDEV SDK](https://pspdev.github.io/)
 
 - Everybody who contributed to the PSP hacking scene.
+
+- avenyet for PSP Street testing.
 
 ## License
 
