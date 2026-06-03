@@ -21,11 +21,6 @@ Tested with official Sony and Ostent batteries. Compatibility with third-party b
 
 Not compatible with PS Vita / Adrenaline and emulators.
 
-## Known issue(s)
-
-Might fail to launch on PSP Street if the Categories Lite plugin is active.
-
-
 ## Installation
 
 1. **Download the latest release** from [Releases](https://github.com/Wyped/NeoPspFetch/releases).
