@@ -15,7 +15,7 @@
 #include "kernel.h"
 
 
-PSP_MODULE_INFO("NeoPspFetch", 0, 1, 1);
+PSP_MODULE_INFO("NeoPspFetch", 0, 1, 2);
 PSP_MAIN_THREAD_ATTR(PSP_THREAD_ATTR_USER | PSP_THREAD_ATTR_VFPU);
 PSP_HEAP_SIZE_KB(4*1024);
 
@@ -492,10 +492,10 @@ void take_screenshot() {
 
 // --- Kernel Exploit - libPspExploit ---
 void doKernelExploit () {
-    printf("Initializing Kernel Exploit...\n");
+    // printf("Initializing Kernel Exploit...\n");
     int ret = pspXploitInitKernelExploit();
     if (ret == 0) {
-        printf("Corrupting Kernel...\n");
+        // printf("Corrupting Kernel...\n");
         ret = pspXploitDoKernelExploit();
         if (ret != 0) {
             printf("ERROR: Kernel Exploit failed\n");
@@ -519,6 +519,11 @@ int is_psp_go(void) {
         return 1;
     }
     return 0;
+}
+
+// --- Detect if PSP Street - Return 1 if Yes, 0 otherwise ---
+int is_psp_street(void) {
+    return (ident_get_tachyon() == 0x00900000);
 }
 
 // --- Print version.txt ---
@@ -629,6 +634,7 @@ void fill_info_main_colored(int x, int y) {
 
 void fill_info_battery_colored(int x, int y) {
     int isGo = is_psp_go();
+    int isStreet = is_psp_street();
     int BatPresence = scePowerIsBatteryExist();
 
     color(BLUE); pspDebugScreenSetXY(x, y+0); printf("Battery Info:");
@@ -720,7 +726,7 @@ void fill_info_battery_colored(int x, int y) {
     }
 
 
-    if (isGo == 1) {
+    if (isGo == 1 || isStreet == 1) {
         color(YELLOW); pspDebugScreenSetXY(x, y+11);  printf("Battery Remaining Capacity: ");
         color(RED);    pspDebugScreenSetXY(x+28, y+11);  printf("UNSUPPORTED");
         color(YELLOW); pspDebugScreenSetXY(x, y+12); printf("Battery Total Capacity: ");
@@ -778,7 +784,7 @@ void fill_info_battery_colored(int x, int y) {
 }
 
 void fill_info_credits_colored(int x, int y) {
-    color(YELLOW);  pspDebugScreenSetXY(x, y+0); printf("NeoPspFetch v1.1");
+    color(YELLOW);  pspDebugScreenSetXY(x, y+0); printf("NeoPspFetch v1.2");
         
     color(WHITE); pspDebugScreenSetXY(x, y+2); printf("Programmed by ");
     color(GREEN); pspDebugScreenSetXY(x, y+3); printf("Wyped");
